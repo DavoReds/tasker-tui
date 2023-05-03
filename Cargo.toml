@@ -1,0 +1,22 @@
+[package]
+name = "tasker-tui"
+version = "0.1.0"
+edition = "2021"
+authors = ["Dalia Rojas Vallejo <daliarojasvallejo@proton.me>"]
+description = "A To-Do TUI application for managing your daily tasks"
+readme = true
+repository = "https://github.com/DavoReds/tasker-tui"
+license = "GPL-3.0-or-later"
+keywords = ["todo", "app", "tui"]
+categories = ["command-line-utilities"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.71"
+clap = { version = "4.2.7", features = ["derive"] }
+confy = { version = "0.5.1", default-features = false, features = ["yaml_conf"] }
+dirs = "5.0.1"
+owo-colors = "3.5.0"
+serde = { version = "1.0.160", features = ["derive"] }
+serde_yaml = "0.9.21"
