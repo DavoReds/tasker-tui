@@ -15,8 +15,11 @@ categories = ["command-line-utilities"]
 [dependencies]
 anyhow = "1.0.71"
 clap = { version = "4.2.7", features = ["derive"] }
+color-to-tui = "0.3.0"
 confy = { version = "0.5.1", default-features = false, features = ["yaml_conf"] }
+crossterm = "0.26.1"
 dirs = "5.0.1"
 owo-colors = "3.5.0"
-serde = { version = "1.0.160", features = ["derive"] }
+ratatui = "0.20.1"
+serde = { version = "1.0.162", features = ["derive"] }
 serde_yaml = "0.9.21"
